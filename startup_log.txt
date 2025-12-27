@@ -1,0 +1,164 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< org.example:chatbot-service >---------------------
+[INFO] Building chatbot-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.4:run (default-cli) > test-compile @ chatbot-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ chatbot-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ chatbot-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ chatbot-service ---
+[INFO] skip non existing resourceDirectory C:\Users\RAZER\Documents\Emsi\5iir\Mohammed Youssfi J2E\ecom-app\chatbot-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ chatbot-service ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.4:run (default-cli) < test-compile @ chatbot-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.4:run (default-cli) @ chatbot-service ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2025-12-20T15:57:40.392+01:00  INFO 3244 --- [chatbot-service] [           main] o.e.c.ChatbotServiceApplication          : Starting ChatbotServiceApplication using Java 17.0.12 with PID 3244 (C:\Users\RAZER\Documents\Emsi\5iir\Mohammed Youssfi J2E\ecom-app\chatbot-service\target\classes started by RAZER in C:\Users\RAZER\Documents\Emsi\5iir\Mohammed Youssfi J2E\ecom-app\chatbot-service)
+2025-12-20T15:57:40.395+01:00  INFO 3244 --- [chatbot-service] [           main] o.e.c.ChatbotServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-12-20T15:57:41.844+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-12-20T15:57:41.859+01:00  INFO 3244 --- [chatbot-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-20T15:57:41.859+01:00  INFO 3244 --- [chatbot-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-12-20T15:57:41.940+01:00  INFO 3244 --- [chatbot-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-20T15:57:41.942+01:00  INFO 3244 --- [chatbot-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1202 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2025-12-20T15:57:42.515+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing PDF page: 1
+2025-12-20T15:57:42.642+01:00 ERROR 3244 --- [chatbot-service] [           main] o.a.fontbox.ttf.GlyphSubstitutionTable   : The expected SubstFormat for ExtensionSubstFormat1 subtable is 6 but should be 1
+2025-12-20T15:57:42.740+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing PDF page: 3
+2025-12-20T15:57:42.787+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing PDF page: 5
+2025-12-20T15:57:42.838+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing PDF page: 7
+2025-12-20T15:57:42.879+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing PDF page: 9
+2025-12-20T15:57:42.920+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing PDF page: 11
+2025-12-20T15:57:42.963+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing PDF page: 13
+2025-12-20T15:57:43.004+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing PDF page: 15
+2025-12-20T15:57:43.056+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing PDF page: 17
+2025-12-20T15:57:43.104+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing PDF page: 19
+2025-12-20T15:57:43.343+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.reader.pdf.PagePdfDocumentReader  : Processing 29 pages
+2025-12-20T15:57:43.509+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.521+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.531+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.536+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.543+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.548+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.555+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.561+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.567+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.583+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.592+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.604+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.608+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.616+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.623+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.632+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.637+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.643+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.646+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.657+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.663+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.667+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.676+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.a.transformer.splitter.TextSplitter  : Splitting up document into 2 chunks.
+2025-12-20T15:57:43.687+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = d225ab11-4ed3-424c-b2d2-e93abda17b9c
+2025-12-20T15:57:44.750+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 11fb0f9e-7102-45b3-afdb-79fbba9f2e83
+2025-12-20T15:57:45.154+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = f3ba7d43-8174-4178-a7fb-2b07c14833b9
+2025-12-20T15:57:45.548+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 8170081d-4c06-44e3-8180-55578e175fe1
+2025-12-20T15:57:45.920+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 9beefe7a-2619-4728-8664-f1898f8a097f
+2025-12-20T15:57:46.367+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = dfa7cdfc-ddfb-464f-8fc5-063622ad65db
+2025-12-20T15:57:46.755+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 711e231c-44b2-4a2a-8e2f-10c3b21b61b2
+2025-12-20T15:57:47.095+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = f52e0996-4472-4017-a282-a4a4618ffd16
+2025-12-20T15:57:47.426+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 4f84a84f-26ce-4731-9432-ba5226a82aac
+2025-12-20T15:57:47.887+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = e28e0e53-8173-42c1-acd0-ae92b20238c7
+2025-12-20T15:57:48.228+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 2f9756fd-447f-4337-825d-39df8f8a56e5
+2025-12-20T15:57:48.620+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = a94e7e94-93a2-4d75-959a-5b26e1ef21fc
+2025-12-20T15:57:49.251+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 74173436-bef7-4701-bb56-39d9e1f74c91
+2025-12-20T15:57:49.687+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = e31d365a-449e-4686-a108-df58910d22ff
+2025-12-20T15:57:50.209+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 0766fa8b-3bd4-4ff7-ac53-886ee695848d
+2025-12-20T15:57:50.558+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 21b4794f-f4ef-487a-b6fc-3cf2c2e98f4f
+2025-12-20T15:57:51.056+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = eabd8041-f3c0-427b-8f6f-f3856f1c65f0
+2025-12-20T15:57:51.428+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 4cf27fb5-e4df-4eb6-b997-a10efb1a7f1d
+2025-12-20T15:57:51.704+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 48b7ad8a-0368-40be-8f65-32280e6da847
+2025-12-20T15:57:52.205+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 6e5db8aa-cd08-499d-9892-48932bfa2fc3
+2025-12-20T15:57:52.684+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = b62b39a0-e5fe-448f-871a-59aac36b0a78
+2025-12-20T15:57:53.117+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = d2df0640-8bf9-4b24-bb5a-f398c895ffcf
+2025-12-20T15:57:53.673+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 27c82c13-7505-4c15-9e7f-8a1d03714351
+2025-12-20T15:57:54.012+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 8386e8a7-d90f-46ac-92f9-ff9eee5c3ad9
+2025-12-20T15:57:54.342+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = ad7a6b1d-e5ef-49a4-b6c3-d54c0a508f40
+2025-12-20T15:57:54.731+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 3030808d-3427-4d68-8ebb-d6a1d2c9f2c5
+2025-12-20T15:57:55.129+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 69a4f76f-675a-41be-883f-81fc9fb8de89
+2025-12-20T15:57:55.483+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 0070e4ad-c587-4290-8172-44fa8ef6b5a1
+2025-12-20T15:57:55.862+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = adf08e53-f44b-4cc0-8491-65bc56ec5a5e
+2025-12-20T15:57:56.321+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = c38a2185-32bb-4c4e-8117-1cb4915155d2
+2025-12-20T15:57:56.667+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 5e2b2531-90b6-4248-a723-2ddd42929d46
+2025-12-20T15:57:57.002+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 59669b78-3a21-438f-b572-6c18f689e74d
+2025-12-20T15:57:57.264+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 77a0caa3-602f-4b02-ae75-b97021ee2b62
+2025-12-20T15:57:57.520+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = dc0d0400-43fc-46f9-ad15-6b32fbee8065
+2025-12-20T15:57:57.917+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = ca0120b8-da2e-4bc4-9b7a-eeac0fda755f
+2025-12-20T15:57:58.373+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 6391e356-b3b6-47e6-83eb-42df29cbff61
+2025-12-20T15:57:58.750+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = f5ee7245-c7fc-40ab-a659-f796211db62d
+2025-12-20T15:57:59.148+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 9646f783-3fe0-497f-a267-8f71fe2c8e17
+2025-12-20T15:57:59.504+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 90526e1c-b43a-486b-a1f8-d467eb35e3b4
+2025-12-20T15:57:59.892+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = fb1913a1-85b4-431f-a3ca-46db690a31b0
+2025-12-20T15:58:00.250+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 46a1089a-028e-4d16-ba5a-dd38d8e9801a
+2025-12-20T15:58:00.621+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 6666879d-f4db-4d6e-a2bb-d174e43802bd
+2025-12-20T15:58:01.013+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 04aa6227-d52d-4474-aa0a-8857247589d3
+2025-12-20T15:58:02.067+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 5b0a258e-6cdb-4d57-bc36-f77e7f38d880
+2025-12-20T15:58:02.446+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = bc8fe680-4d37-4938-9110-e654f7df2c47
+2025-12-20T15:58:02.805+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = c8dead33-838f-4d77-b414-ffb246f4b4e9
+2025-12-20T15:58:03.758+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 2e6138ea-03c2-49a6-a7d9-97e3435fa6bc
+2025-12-20T15:58:04.277+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 638710b4-588f-4d44-a50b-1fcd635fc0a6
+2025-12-20T15:58:04.728+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = f57acf8c-3753-40f2-a4e9-6318f83b524b
+2025-12-20T15:58:05.116+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 499e26ba-0ccb-4fcc-96fb-f0b5cccc015a
+2025-12-20T15:58:05.600+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = 0a6e4703-e165-433c-ae0d-7754b3535321
+2025-12-20T15:58:06.095+01:00  INFO 3244 --- [chatbot-service] [           main] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingClient for document id = ddeef348-6f7d-4423-9d5e-ae3c538b0e17
+Ingested 52 chunks.
+2025-12-20T15:58:07.000+01:00  WARN 3244 --- [chatbot-service] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-20T15:58:07.013+01:00  INFO 3244 --- [chatbot-service] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-20T15:58:07.034+01:00 ERROR 3244 --- [chatbot-service] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8084 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8084 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  31.074 s
+[INFO] Finished at: 2025-12-20T15:58:07+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.4:run (default-cli) on project chatbot-service: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

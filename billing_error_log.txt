@@ -1,0 +1,462 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< org.example:billing-service >---------------------
+[INFO] Building billing-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.4:run (default-cli) > test-compile @ billing-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ billing-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ billing-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ billing-service ---
+[INFO] skip non existing resourceDirectory C:\Users\RAZER\Documents\Emsi\5iir\Mohammed Youssfi J2E\ecom-app\billing-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ billing-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.2.4:run (default-cli) < test-compile @ billing-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.4:run (default-cli) @ billing-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2025-12-13T17:25:49.869+01:00  INFO 24296 --- [billing-service] [           main] o.e.b.BillingServiceApplication          : Starting BillingServiceApplication using Java 17.0.12 with PID 24296 (C:\Users\RAZER\Documents\Emsi\5iir\Mohammed Youssfi J2E\ecom-app\billing-service\target\classes started by RAZER in C:\Users\RAZER\Documents\Emsi\5iir\Mohammed Youssfi J2E\ecom-app\billing-service)
+2025-12-13T17:25:49.872+01:00  INFO 24296 --- [billing-service] [           main] o.e.b.BillingServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-12-13T17:25:49.912+01:00  INFO 24296 --- [billing-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9999
+2025-12-13T17:25:49.912+01:00  INFO 24296 --- [billing-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=billing-service, profiles=[default], label=null, version=c1637e21f9fb670001fec3b6b8c459796d26834f, state=
+2025-12-13T17:25:49.913+01:00  WARN 24296 --- [billing-service] [           main] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLocationResolver.lambda$resolveProfileSpecific$9(ConfigServerConfigDataLocationResolver.java:297) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.boot.DefaultBootstrapContext.getInstance(DefaultBootstrapContext.java:119) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.DefaultBootstrapContext.getOrElseThrow(DefaultBootstrapContext.java:111) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.DefaultBootstrapContext.get(DefaultBootstrapContext.java:88) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLocationResolver.lambda$resolveProfileSpecific$10(ConfigServerConfigDataLocationResolver.java:304) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.boot.DefaultBootstrapContext.close(DefaultBootstrapContext.java:133) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:402) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.example.billingservice.BillingServiceApplication.main(BillingServiceApplication.java:27) ~[classes/:na]
+
+2025-12-13T17:25:50.829+01:00  INFO 24296 --- [billing-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-13T17:25:50.962+01:00  INFO 24296 --- [billing-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 2 JPA repository interfaces.
+2025-12-13T17:25:51.270+01:00  INFO 24296 --- [billing-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3f681866-bce4-383d-8454-3e0722acde8f
+2025-12-13T17:25:51.566+01:00  WARN 24296 --- [billing-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-12-13T17:25:51.569+01:00  WARN 24296 --- [billing-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-13T17:25:51.878+01:00  INFO 24296 --- [billing-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-12-13T17:25:51.887+01:00  INFO 24296 --- [billing-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-13T17:25:51.891+01:00  INFO 24296 --- [billing-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-12-13T17:25:51.969+01:00  INFO 24296 --- [billing-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-13T17:25:51.970+01:00  INFO 24296 --- [billing-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2053 ms
+2025-12-13T17:25:52.092+01:00  INFO 24296 --- [billing-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-13T17:25:52.296+01:00  INFO 24296 --- [billing-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bills-db user=SA
+2025-12-13T17:25:52.297+01:00  INFO 24296 --- [billing-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-13T17:25:52.309+01:00  INFO 24296 --- [billing-service] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bills-db'
+2025-12-13T17:25:52.557+01:00  INFO 24296 --- [billing-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-13T17:25:52.607+01:00  INFO 24296 --- [billing-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-12-13T17:25:52.646+01:00  INFO 24296 --- [billing-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-13T17:25:52.862+01:00  INFO 24296 --- [billing-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-13T17:25:53.816+01:00  INFO 24296 --- [billing-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-13T17:25:53.867+01:00  INFO 24296 --- [billing-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T17:25:54.226+01:00  WARN 24296 --- [billing-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-13T17:25:54.546+01:00  INFO 24296 --- [billing-service] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'customer-service' URL not provided. Will try picking an instance via load-balancing.
+2025-12-13T17:25:54.614+01:00  INFO 24296 --- [billing-service] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'inventory-service' URL not provided. Will try picking an instance via load-balancing.
+2025-12-13T17:25:55.709+01:00  INFO 24296 --- [billing-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-12-13T17:25:55.746+01:00  WARN 24296 --- [billing-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-13T17:25:55.770+01:00  INFO 24296 --- [billing-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2025-12-13T17:25:55.861+01:00  INFO 24296 --- [billing-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-12-13T17:25:55.927+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-12-13T17:25:55.931+01:00  INFO 24296 --- [billing-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-13T17:25:55.952+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-13T17:25:55.954+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-13T17:25:55.954+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-13T17:25:55.954+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-13T17:25:55.954+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-13T17:25:55.954+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-12-13T17:25:55.954+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-13T17:25:56.254+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-13T17:25:56.255+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-12-13T17:25:56.258+01:00  INFO 24296 --- [billing-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-13T17:25:56.261+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1765643156261 with initial instances count: 4
+2025-12-13T17:25:56.268+01:00  INFO 24296 --- [billing-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BILLING-SERVICE with eureka with status UP
+2025-12-13T17:25:56.269+01:00  INFO 24296 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1765643156269, current=UP, previous=STARTING]
+2025-12-13T17:25:56.270+01:00  INFO 24296 --- [billing-service] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING-SERVICE/DESKTOP-ROS004I:billing-service:8083: registering service...
+2025-12-13T17:25:56.296+01:00  INFO 24296 --- [billing-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
+2025-12-13T17:25:56.297+01:00  INFO 24296 --- [billing-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-12-13T17:25:56.321+01:00  INFO 24296 --- [billing-service] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING-SERVICE/DESKTOP-ROS004I:billing-service:8083 - registration status: 204
+2025-12-13T17:25:56.423+01:00  INFO 24296 --- [billing-service] [           main] o.e.b.BillingServiceApplication          : Started BillingServiceApplication in 8.335 seconds (process running for 8.776)
+2025-12-13T17:26:26.289+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:26:56.324+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:27:26.355+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:27:56.383+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:28:26.405+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:28:56.437+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:29:26.462+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:29:56.484+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:30:26.518+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:30:55.957+01:00  INFO 24296 --- [billing-service] [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-13T17:30:56.545+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:31:26.576+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:31:56.598+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:32:26.630+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:32:56.656+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:33:26.679+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-12-13T17:33:56.711+01:00  WARN 24296 --- [billing-service] [freshExecutor-0] c.ConfigServerConfigDataLocationResolver : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (configserver)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:77) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.refresh(ConfigServerInstanceMonitor.java:90) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.heartbeat(ConfigServerInstanceMonitor.java:81) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.cloud.config.client.ConfigServerInstanceMonitor.onApplicationEvent(ConfigServerInstanceMonitor.java:69) ~[spring-cloud-config-client-4.1.2.jar:4.1.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:121) ~[spring-cloud-netflix-eureka-client-4.1.2.jar:4.1.2]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:975) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475) ~[eureka-client-2.0.2.jar:2.0.2]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442) ~[eureka-client-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
